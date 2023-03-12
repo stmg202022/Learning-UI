@@ -1,42 +1,25 @@
 import Button from "./Component/Button/index";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./Theme/theme";
 
 function App() {
   return (
-    <div className="App">
-      <Button
-        variant="success"
-        onClick={() => console.log("Success Button Click")}
-      >
-        Success Button
-      </Button>
-      <Button
-        variant="danger"
-        onClick={() => console.log(" Danger Button Click")}
-      >
-        Danger button
-      </Button>
-      <Button
-        variant="primary"
-        onClick={() => console.log(" Primary Button Click")}
-      >
-        Primary Button
-      </Button>
-      <Button
-        variant="warning"
-        onClick={() => console.log(" Warning Button Click")}
-      >
-        Warning Button
-      </Button>
-      <Button variant="Info" onClick={() => console.log(" Info Button Click")}>
-        Info Button
-      </Button>
-      <Button variant="light" onClick={() => console.log("Light Button Click")}>
-        Light Button
-      </Button>
-      <Button variant="dark" onClick={() => console.log(" Dark Button Click")}>
-        Dark Button
-      </Button>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Button variant="primary" size="lg">
+          Primary
+        </Button>
+        <Button variant="secondary" size="md">
+          Secondary
+        </Button>
+        <Button variant="success" size="sm">
+          Success
+        </Button>
+        <Button variant="info" size="xs">
+          Info
+        </Button>
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,17 +1,17 @@
 export const theme = {
   primary: {
     backgroundColor: "#007bff",
-    color: "#fff",
+    textColor: "#ffffff",
     borderColor: "#007bff",
   },
   secondary: {
     backgroundColor: "#6c757d",
-    color: "#fff",
+    textColor: "#ffffff",
     borderColor: "#6c757d",
   },
   success: {
     backgroundColor: "#28a745",
-    color: "#fff",
+    textColor: "#ffffff",
     borderColor: "#28a745",
   },
 };
