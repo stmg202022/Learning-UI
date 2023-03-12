@@ -27,14 +27,17 @@ const ButtonComponent = styled.button`
         ? "1.6rem"
         : "1.1rem"};
 
-  height: ${(props) =>
-    props.size === "sm"
+  height: ${({ size }) =>
+    size === "xs"
+      ? "25px"
+      : size === "sm"
       ? "34px"
-      : props.size === "md"
+      : size === "md"
       ? "37px"
-      : props.size === "lg"
+      : size === "lg"
       ? "40px"
       : "34px"};
+
   font-famlily: "Inter", sans-serif;
   font-weight: 500;
   border: 1px solid transparent;
